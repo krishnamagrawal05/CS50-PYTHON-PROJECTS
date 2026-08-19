@@ -1,0 +1,23 @@
+expression = input("Expression: ")
+
+# 1 + 1
+
+elements = expression.split(" ")
+
+num_1 = int(elements[0])
+operator = elements[1]
+num_2 = int(elements[2])
+
+if operator == "+":
+    result = num_1 + num_2
+
+elif operator == "-":
+    result = num_1 - num_2
+
+elif operator == "*":
+   result = num_1 * num_2
+
+elif operator == "/":
+    result = num_1 / num_2
+
+print(f"{result:.1f}")
