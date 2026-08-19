@@ -1,0 +1,22 @@
+def main():
+    i = 0
+    n = input("Name:")
+    snake = n
+    if n == n.lower():
+        print(f"{n}")
+    else:
+        while i < len(n):
+            if n[i] == n[i].upper():
+                if i > 11:
+                    snake = snake[:i + 1] + "_" + snake[i + 1:]
+                    i += 1
+                else:
+                    snake = snake[:i] + "_" + snake[i:]
+                    i += 1
+
+            else:
+                i += 1
+        print(f"{snake.lower()}")
+
+
+main()
